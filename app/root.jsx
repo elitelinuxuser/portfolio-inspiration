@@ -43,7 +43,6 @@ export const links = () => [
   { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
   { rel: 'shortcut_icon', href: '/shortcut.png', type: 'image/png', sizes: '64x64' },
   { rel: 'apple-touch-icon', href: '/icon-256.png', sizes: '256x256' },
-  { rel: 'author', href: '/humans.txt', type: 'text/plain' },
 ];
 
 export const loader = async ({ request, context }) => {
@@ -95,8 +94,8 @@ export default function App() {
 
   useEffect(() => {
     console.info(
-      `${config.ascii}\n`,
-      `Taking a peek huh? Check out the source code: ${config.repo}\n\n`
+    `${config.ascii}\n`,
+      `Taking a peek huh? What are you trying to do?\n\n`
     );
   }, []);
 

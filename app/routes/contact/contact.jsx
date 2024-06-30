@@ -119,7 +119,8 @@ export const Contact = () => {
               as="h1"
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
-              <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
+              <div><DecoderText text="Got an idea?" start={status !== 'exited'} delay={100} /></div>
+              <div style={{marginTop: 10}}><DecoderText text="Let's chat!" start={status !== 'exited'} delay={200} /></div>
             </Heading>
             <Divider
               className={styles.divider}
